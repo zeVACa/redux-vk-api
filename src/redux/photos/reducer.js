@@ -1,6 +1,8 @@
-const initialState = {};
+const initialState = {
+  photos: [],
+};
 
-export default (state = initialState, { type, payload }) => {
+export const photosReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case 'typeName':
       return { ...state, ...payload };
